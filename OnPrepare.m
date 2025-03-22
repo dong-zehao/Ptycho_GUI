@@ -15,7 +15,7 @@ function OnPrepare(app)
         end 
         fname_here = fullfile(fileList(index).folder, fileList(index).name);
         LogMessage(app, fname_here);
-        [dp, rot_gatan] = ReadDM4File_4D(fname_here);
+        [dp, rot_gatan] = utils.ReadDM4File_4D(fname_here);
 
         % update UITable for preparation
         app.UITable_3.Data = [app.UITable_3.Data; index size(dp, [3 4])];

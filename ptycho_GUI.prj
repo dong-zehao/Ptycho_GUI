@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2917992712" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
+  <configuration build-checksum="4290802672" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
     <param.appname>ptycho_GUI</param.appname>
     <param.authnamewatermark>Zehao Dong</param.authnamewatermark>
     <param.email>dzh22@mails.tsinghua.edu.cn</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tpef0bcbae_58a5_4317_9fb6_c26a564e4ff3.png</param.screenshot>
+    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp71238f16_3a35_4672_bc4c_eb80e6e0c372.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -174,6 +174,7 @@
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+scans\get_queue.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+scans\read_metadata.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+scans\read_positions.m</file>
+      <file>${PROJECT_ROOT}\+utils\ReadDM4File_4D.m</file>
       <file>${PROJECT_ROOT}\LogMessage.m</file>
       <file>${PROJECT_ROOT}\OnPrepare.m</file>
       <file>${PROJECT_ROOT}\OnReconstruct.m</file>
@@ -184,7 +185,6 @@
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\generateResultDir.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\is_used.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\bin_cbed.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\EMIODist2\EMIODist2\ReadDM4File_4D.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\centroid3.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\shift_pix.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\shiftmeasure.m</file>
