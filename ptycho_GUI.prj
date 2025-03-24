@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4145320793" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
+  <configuration build-checksum="2435291900" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
     <param.appname>ptycho_GUI</param.appname>
     <param.authnamewatermark>Zehao Dong</param.authnamewatermark>
     <param.email>dzh22@mails.tsinghua.edu.cn</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp5c669796_458b_4c7f_9a74_fa6c424d2b23.png</param.screenshot>
+    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp7ab0caea_8421_425b_bdf4_900a56095672.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -178,6 +178,7 @@
       <file>${PROJECT_ROOT}\+utils\LogMessage.m</file>
       <file>${PROJECT_ROOT}\+utils\OnPrepare.m</file>
       <file>${PROJECT_ROOT}\+utils\OnReconstruct.m</file>
+      <file>${PROJECT_ROOT}\+utils\rawread.m</file>
       <file>${PROJECT_ROOT}\+utils\ReadDM4File_4D.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\aligned_FSC.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\check_option.m</file>
