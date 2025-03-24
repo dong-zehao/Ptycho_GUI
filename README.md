@@ -24,6 +24,8 @@ Ptycho_GUI is a MATLAB-based graphical user interface designed for performing pt
 ## Installation
 
 1. Clone or download the `Ptycho_GUI` repository.
+   - git clone suggested to keep up with future updates.
+
 2. Open MATLAB and navigate to the `Ptycho_GUI\dist` folder.
 3. Run `Ptycho_GUI.mlappinstall` to install Ptycho_GUI in MATLAB.
 
