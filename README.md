@@ -6,7 +6,7 @@ Ptycho_GUI is a MATLAB-based graphical user interface designed for performing pt
 
 **Mostly for personal/in-group use, maybe more features will be added in the future for generalization**
 
-![figoverview](img\Overview.png)
+![figoverview](img/Overview.png)
 
 ## Requirements
 
