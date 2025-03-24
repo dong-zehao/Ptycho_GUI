@@ -2,9 +2,11 @@
 
 ## Overview
 
-Ptycho_GUI is a MATLAB-based graphical user interface designed for performing ptychographic reconstructions from 4D-STEM datasets. The software facilitates data preprocessing, parameter selection, and iterative reconstruction using GPU acceleration. **Note: Ptycho_GUI is in a very early stage!**
+Ptycho_GUI is a MATLAB-based graphical user interface designed for performing ptychographic reconstructions from 4D-STEM datasets. The software facilitates data preprocessing, parameter selection, and iterative reconstruction using GPU acceleration. 
 
-**Mostly for personal/in-group use, maybe more features will be added in the future for generalization**
+**Note: Ptycho_GUI is in a very early stage! currently supports .dm4 files from K3 and .raw files from EMPAD**
+
+**Maybe more features will be added in the future for generalization**
 
 ![figoverview](img/Overview.png)
 
@@ -34,9 +36,10 @@ Ptycho_GUI is a MATLAB-based graphical user interface designed for performing pt
    - **Data path**: Choose the dataset folder containing 4D-STEM data (multiple datasets can be found).
 2. **Prepare data**: 
    - Select your camera (detector) parameters (saved in `Ptycho_GUI\+configs\xxxx.mat`), including voltage, alpha, rbf, stepsize, rotation, ADU, which you can check and change in the `Show Hyper Param.` tab.
+     - MORE PARAMETERS CAN BE LOADED WITH CUSTOMLY SAVED `.mat` FILES IN `+configs`.
    - Select which dataset (scan number) to be prepared, and the corresponding defocus value (minus values represent over-focus). Note that multiple datasets can be prepared on one click.
    - Adjust binning and padding parameters for CBED, then click "Prepare."
-
+   
 3. **Set reconstruction parameters**: Define which dataset (scan number), thickness, layers, iterations, and other parameters. (details in below).
 4. **Run reconstruction**: Click "Reconstruct" and monitor progress in the right panel.
 5. **Adjust hyperparameters (if needed)**: Use the "Show Hyper Param." option to fine-tune settings.
