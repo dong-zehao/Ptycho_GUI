@@ -30,14 +30,14 @@ function OnPrepare(app)
         utils.LogMessage(app, 'Finished loading 4D-STEM Data');
 
         % update UITable for preparation
-        app.UITable_3.Data = [app.UITable_3.Data; index size(dp, [3 4])];
+        app.UITable_3.Data = [app.UITable_3.Data; index 2 size(dp, 3) 2 size(dp, 4) rot];
 
         % how much to bin?
         Np_binto = app.Np_bintoSpinner.Value;
         k3_rotation = app.RotoffsetEditField.Value + 180 + rot;
-        binsize = size(dp,1)/Np_binto;
+        binsize = round(size(dp,1)/Np_binto);
 
-        utils.LogMessage(app, 'Preprocessing 4D-STEM Data ......');
+        utils.LogMessage(app, sprintf('Binning CBED by size %i', binsize));
         cbed = bin_cbed(dp, binsize);
         utils.LogMessage(app, 'Finished CBED binning');
         switch app.RotateCBEDSwitch.Value
