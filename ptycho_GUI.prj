@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4290802672" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
+  <configuration build-checksum="4145320793" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
     <param.appname>ptycho_GUI</param.appname>
     <param.authnamewatermark>Zehao Dong</param.authnamewatermark>
     <param.email>dzh22@mails.tsinghua.edu.cn</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp71238f16_3a35_4672_bc4c_eb80e6e0c372.png</param.screenshot>
+    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp5c669796_458b_4c7f_9a74_fa6c424d2b23.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -125,59 +125,60 @@
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\struc2cell.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\update_param.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\verbose.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\calc_FSC.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_error_metric.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_object_spectrum.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_objects.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_positions.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_probes.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_probes_at_detector.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_raw_data.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\plot_results.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+analysis\private\get_object_pixel_size.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+save\extract4saving.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+save\reconstructions_as_h5.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+save\reconstructions_as_mat.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\+save\save_results.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\append_engine.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\apply_binning.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\check_prepared_data.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\engine_status.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\export4remote.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\find_shared_IDs.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\generate_scan_name.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\hermite_like.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\initial_checks.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\initialize_ptycho.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\prep_h5data.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\prepare_initial_guess.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\prepare_initial_object.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\prepare_initial_probes.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\private\ptycho_exit.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\private\write_procID.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\probe_modes_ortho.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\ptycho_adjust_positions.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\ptycho_model_probe.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\ptycho_prepare_paths.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\ptycho_prepare_scans.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\ptycho_recons.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\remote_cleanup.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\remote_status.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\run_data_preparator.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\run_engine.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+core\update_object_size.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+detector\+prep_data\update_defaults.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+detector\+prep_data\update_funcs.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+detector\detStorage.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+detector\initialize_detector.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+detector\load_detector.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+scans\get_queue.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+scans\read_metadata.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\+scans\read_positions.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\calc_FSC.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_error_metric.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_object_spectrum.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_objects.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_positions.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_probes.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_probes_at_detector.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_raw_data.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\plot_results.m</file>
+      <file>${PROJECT_ROOT}\+core\+analysis\private\get_object_pixel_size.m</file>
+      <file>${PROJECT_ROOT}\+core\+save\extract4saving.m</file>
+      <file>${PROJECT_ROOT}\+core\+save\reconstructions_as_h5.m</file>
+      <file>${PROJECT_ROOT}\+core\+save\reconstructions_as_mat.m</file>
+      <file>${PROJECT_ROOT}\+core\+save\save_results.m</file>
+      <file>${PROJECT_ROOT}\+core\append_engine.m</file>
+      <file>${PROJECT_ROOT}\+core\apply_binning.m</file>
+      <file>${PROJECT_ROOT}\+core\check_prepared_data.m</file>
+      <file>${PROJECT_ROOT}\+core\engine_status.m</file>
+      <file>${PROJECT_ROOT}\+core\export4remote.m</file>
+      <file>${PROJECT_ROOT}\+core\find_shared_IDs.m</file>
+      <file>${PROJECT_ROOT}\+core\generate_scan_name.m</file>
+      <file>${PROJECT_ROOT}\+core\hermite_like.m</file>
+      <file>${PROJECT_ROOT}\+core\initial_checks.m</file>
+      <file>${PROJECT_ROOT}\+core\initialize_ptycho.m</file>
+      <file>${PROJECT_ROOT}\+core\prep_h5data.m</file>
+      <file>${PROJECT_ROOT}\+core\prepare_initial_guess.m</file>
+      <file>${PROJECT_ROOT}\+core\prepare_initial_object.m</file>
+      <file>${PROJECT_ROOT}\+core\prepare_initial_probes.m</file>
+      <file>${PROJECT_ROOT}\+core\private\ptycho_exit.m</file>
+      <file>${PROJECT_ROOT}\+core\private\write_procID.m</file>
+      <file>${PROJECT_ROOT}\+core\probe_modes_ortho.m</file>
+      <file>${PROJECT_ROOT}\+core\ptycho_adjust_positions.m</file>
+      <file>${PROJECT_ROOT}\+core\ptycho_model_probe.m</file>
+      <file>${PROJECT_ROOT}\+core\ptycho_prepare_paths.m</file>
+      <file>${PROJECT_ROOT}\+core\ptycho_prepare_scans.m</file>
+      <file>${PROJECT_ROOT}\+core\ptycho_recons.m</file>
+      <file>${PROJECT_ROOT}\+core\remote_cleanup.m</file>
+      <file>${PROJECT_ROOT}\+core\remote_status.m</file>
+      <file>${PROJECT_ROOT}\+core\run_data_preparator.m</file>
+      <file>${PROJECT_ROOT}\+core\run_engine.m</file>
+      <file>${PROJECT_ROOT}\+core\update_object_size.m</file>
+      <file>${PROJECT_ROOT}\+detector\+prep_data\update_defaults.m</file>
+      <file>${PROJECT_ROOT}\+detector\+prep_data\update_funcs.m</file>
+      <file>${PROJECT_ROOT}\+detector\detStorage.m</file>
+      <file>${PROJECT_ROOT}\+detector\initialize_detector.m</file>
+      <file>${PROJECT_ROOT}\+detector\load_detector.m</file>
+      <file>${PROJECT_ROOT}\+scans\get_queue.m</file>
+      <file>${PROJECT_ROOT}\+scans\read_metadata.m</file>
+      <file>${PROJECT_ROOT}\+scans\read_positions.m</file>
+      <file>${PROJECT_ROOT}\+utils\imshow.m</file>
+      <file>${PROJECT_ROOT}\+utils\LogMessage.m</file>
+      <file>${PROJECT_ROOT}\+utils\OnPrepare.m</file>
+      <file>${PROJECT_ROOT}\+utils\OnReconstruct.m</file>
       <file>${PROJECT_ROOT}\+utils\ReadDM4File_4D.m</file>
-      <file>${PROJECT_ROOT}\LogMessage.m</file>
-      <file>${PROJECT_ROOT}\OnPrepare.m</file>
-      <file>${PROJECT_ROOT}\OnReconstruct.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\aligned_FSC.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\check_option.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\compose_affine_matrix.m</file>
