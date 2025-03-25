@@ -2,7 +2,7 @@
 
 ## Overview
 
-Ptycho_GUI is a MATLAB-based graphical user interface designed for performing ptychographic reconstructions from 4D-STEM datasets. The software facilitates data preprocessing, parameter selection, and iterative reconstruction using GPU acceleration. 
+Ptycho_GUI is a MATLAB-based graphical user interface designed for performing ptychographic reconstructions from 4D-STEM datasets. The software facilitates data preprocessing, parameter selection, and sequential reconstructions of multiple datasets.
 
 **Note: Ptycho_GUI is in a very early stage! currently supports .dm4 files from K3, .raw files from EMPAD, and .h5 files from ARINA**
 
