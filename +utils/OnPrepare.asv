@@ -17,29 +17,15 @@ function OnPrepare(app)
         utils.LogMessage(app, fname_here);
         utils.LogMessage(app, 'Loading 4D-STEM Data ......');
 
-        % processing different filetypes
         [~, ~, ext] = fileparts(fname_here);
         switch ext
             case '.dm4'
-                utils.LogMessage(app, 'Loading from .dm4 ......');
                 [dp, rot] = utils.ReadDM4File_4D(fname_here);
                 app.ScanRotSpinner.Value = rot;
-                if app.CroprealspaceCheckBox.Value
-                    crop_idx0 = app.UITable_2.Data(i_run, end-3:end);
-                else
-                    crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
-                end
             case '.raw'
-                utils.LogMessage(app, 'Loading from .raw ......');
                 dp = utils.rawread(fname_here);
                 rot = app.ScanRotSpinner.Value;
-                if app.CroprealspaceCheckBox.Value
-                    crop_idx0 = app.UITable_2.Data(i_run, end-3:end);
-                else
-                    crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
-                end
             case '.h5'
-                utils.LogMessage(app, 'Loading from .h5 ......');
                 if app.CroprealspaceCheckBox.Value
                     crop_idx0 = app.UITable_2.Data(i_run, end-3:end);
                     idx_y = crop_idx0(1):crop_idx0(2);
@@ -47,14 +33,18 @@ function OnPrepare(app)
                     dp = read_h5_arina(fname_here,idx_x,idx_y);
                 else
                     dp = read_h5_arina(fname_here);
-                    crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
                 end
-                rot = app.ScanRotSpinner.Value;
             otherwise
                 utils.LogMessage(app, 'filetype not supported');
         end
         utils.LogMessage(app, 'Finished loading 4D-STEM Data');
         
+        % update UITable for preparation
+        if app.CroprealspaceCheckBox.Value
+            crop_idx0 = app.UITable_2.Data(i_run, end-3:end);
+        else
+            crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
+        end
         app.UITable_3.Data = [app.UITable_3.Data; index crop_idx0 rot];
         utils.LogMessage(app, sprintf('Cropping data into [%d:%d] vs [%d:%d]', crop_idx0));
 

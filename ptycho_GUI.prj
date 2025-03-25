@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="95614673" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
+  <configuration build-checksum="3287671606" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
     <param.appname>ptycho_GUI</param.appname>
     <param.authnamewatermark>Zehao Dong</param.authnamewatermark>
     <param.email>dzh22@mails.tsinghua.edu.cn</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp1817e377_bd34_461e_b47a_a2dd1c455a97.png</param.screenshot>
+    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tp78e15985_42f4_46f6_bc43_c050d399166e.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -191,6 +191,7 @@
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\shift_pix.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\shiftmeasure.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Radius_subpix\crop_pad.m</file>
+      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\read_h5_arina.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\utils_electron\electronwavelength.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_zhen\gen_mask.m</file>
       <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_zhen\generateProbeFunction2.m</file>

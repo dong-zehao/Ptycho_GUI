@@ -38,11 +38,13 @@ function OnReconstruct(app)
                 utils.LogMessage(app, 'No scan rotation during reconstruction');
             case 'Rot. Scan'
                 rot_ang = app.ScanRotSpinner.Value;
-                utils.LogMessage(app, sprintf('Scan rotation %.1f during reconstruction', rot_ang));
+                utils.LogMessage(app, sprintf('Scan rotation %.1f during reconstruction', rot_));
             otherwise
                 utils.LogMessage(app, 'RotateCBED cannot determine')
         end
         
+        
+
         scan_step_size_x = app.StepsizeEditField.Value; %angstrom
         scan_step_size_y = app.StepsizeEditField.Value; %angstrom
         N_scan_x = params.crop_idx0(2)-params.crop_idx0(1)+1;
