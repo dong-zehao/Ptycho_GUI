@@ -8,7 +8,17 @@ Ptycho_GUI is a MATLAB-based graphical user interface designed for performing pt
 
 **Maybe more features will be added in the future for generalization**
 
-![figoverview](img/Overview.png)
+## Features
+
+### One click for loading multiple datasets for Ptycho
+
+![figoverview](img/prepare.gif)
+
+### One Click for Reconstructing multiple datasets
+
+![figoverview](img/reconstruct.gif)
+
+![figoverview](img/overview.png)
 
 ## Requirements
 
