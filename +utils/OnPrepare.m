@@ -185,7 +185,10 @@ function OnPrepare(app)
         clear cbed;
         save(fullfile(save_dir,'/params_backup.mat'),'ADU','alpha','rbf','dx','voltage',...
             'df','Np_p','dk','cs','sft*', 'crop_idx0', 'maskname', 'binsize');
-        copyfile(strcat(mfilename('fullpath'),'.m'),save_dir);
+
+        params = get_prepareparams(app);
+        save(fullfile(save_dir, 'prepare_parameters.mat'), 'params');
+        %copyfile(strcat(mfilename('fullpath'),'.m'),save_dir);
         utils.LogMessage(app, sprintf('====== Finished preparing for scan number %02d ======', index));
     end
 end
@@ -197,4 +200,28 @@ function [mask, maskname] = mygen_mask(path, in, out, rot, methods)
     mask = imrotate(gen_mask(in, out), rot, "nearest", methods);
     maskname = fullfile(path, ['det_mask' num2str(in) '_outside' num2str(out) '_rot' num2str(rot) '.mat']);
     save(maskname, 'mask');
+end
+
+function params = get_prepareparams(app)
+    params = struct();
+    params.DfolderpatternEditField = app.DfolderpatternEditField.Value;
+    params.DatapathEditField = app.DatapathEditField.Value;
+    params.PtychopathEditField = app.PtychopathEditField.Value;
+    params.DETECTORDropDown = app.DETECTORDropDown.Value;
+    params.FilenameEditField = app.FilenameEditField.Value;
+    params.CustomizeoutputpathCheckBox = app.CustomizeoutputpathCheckBox.Value;
+    params.OutputpathEditField = app.OutputpathEditField.Value;
+
+    params.Np_bintoSpinner = app.Np_bintoSpinner.Value;
+    params.Np_padtoSpinner = app.Np_padtoSpinner.Value;
+    params.UITable_prepare = app.UITable_2.Data;
+    params.RotateSwitch = app.RotateSwitch.Value;
+    params.CroprealspaceCheckBox = app.CroprealspaceCheckBox.Value;
+    params.ScanRotSpinner = app.ScanRotSpinner.Value;
+    params.SavedpCheckBox = app.SavedpCheckBox.Value;
+    params.AccVoltEditField = app.AccVoltEditField.Value;
+    params.alphaEditField = app.alphaEditField.Value;
+    params.rbfEditField = app.rbfEditField.Value;
+    params.RotoffsetEditField = app.RotoffsetEditField.Value;
+    params.ADUEditField = app.ADUEditField.Value;
 end

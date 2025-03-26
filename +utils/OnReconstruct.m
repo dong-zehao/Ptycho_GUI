@@ -450,8 +450,9 @@ function OnReconstruct(app)
         [eng.fout, p.suffix] =  generateResultDir(eng, resultDir,extrainfo);
         eng.extraPrintInfo = strcat(strcat(mater,'_scan'),num2str(min(p.   scan_number)),'-',num2str(max(p.   scan_number)));
         mkdir(eng.fout);
-        copyfile(strcat(mfilename('fullpath'),'.m'),eng.fout);
         
+        params = get_reconstructparams(app);
+        save(fullfile(eng.fout, 'reconstruct_parameters.mat'), 'params');
         
         %add engine
         [p, ~] = core.append_engine(p, eng);    % Adds this engine to the reconstruction process
@@ -463,4 +464,35 @@ function OnReconstruct(app)
         toc
         reset(gpuDevice());
     end
+end
+
+function params = get_reconstructparams(app)
+    params = struct();
+    params.DfolderpatternEditField = app.DfolderpatternEditField.Value;
+    params.DatapathEditField = app.DatapathEditField.Value;
+    params.PtychopathEditField = app.PtychopathEditField.Value;
+    params.DETECTORDropDown = app.DETECTORDropDown.Value;
+    params.FilenameEditField = app.FilenameEditField.Value;
+    params.CustomizeoutputpathCheckBox = app.CustomizeoutputpathCheckBox.Value;
+    params.OutputpathEditField = app.OutputpathEditField.Value;
+
+    params.UITable_reconstruct = app.UITable.Data;
+    params.RotateSwitch = app.RotateSwitch.Value;
+    params.ScanRotSpinner = app.ScanRotSpinner.Value;
+    params.AccVoltEditField = app.AccVoltEditField.Value;
+    params.alphaEditField = app.alphaEditField.Value;
+    params.rbfEditField = app.rbfEditField.Value;
+    params.StepsizeEditField = app.StepsizeEditField.Value;
+    params.RotoffsetEditField = app.RotoffsetEditField.Value;
+
+    params.RotoffsetEditField = app.gpu_idSpinner.Value;
+    params.Np_presolveSpinner = app.Np_presolveSpinner.Value;
+    params.blurPSFEditField = app.blurPSFEditField.Value;
+    params.ProbemodeSpinner = app.ProbemodeSpinner.Value;
+    params.reg_layerEditField = app.reg_layerEditField.Value;
+    params.removeambiguitySwitch = app.removeambiguitySwitch.Value;
+    params.NiterprobeupdSpinner = app.NiterprobeupdSpinner.Value;
+    params.NiterposcorrSpinner = app.NiterposcorrSpinner.Value;
+    params.NitersaveSpinner = app.NitersaveSpinner.Value;
+    params.NiterplotSpinner = app.NiterplotSpinner.Value;
 end
