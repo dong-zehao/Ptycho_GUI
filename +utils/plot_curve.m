@@ -4,5 +4,5 @@ function plot_curve(axis, x, y, xlbl, ylbl)
     ylabel(axis, ylbl);
     axis.Box = 'on';
     xlim(axis, [min(x), max(x)]);
-    ylim(axis, [0 max(y)*1.01]);
+    ylim(axis, [min(y)*0.9 max(y)*1.01]);
 end
