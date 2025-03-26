@@ -1,6 +1,12 @@
 function OnReconstruct(app)
     cd(app.PtychopathEditField.Value);
-    base_path=fullfile(app.DatapathEditField.Value, 'All_Data');          base_path=strcat(base_path,'/');
+    isCustomOutputPath = app.CustomizeoutputpathCheckBox.Value;
+    if ~isCustomOutputPath
+        base_path = fullfile(app.DatapathEditField.Value,'All_Data');
+    else
+        base_path = app.OutputpathEditField.Value;
+    end
+    base_path=strcat(base_path,'/');
     testmode = false;       
     for i_run = 1:size(app.UITable.Data,1)
         index = app.UITable.Data(i_run,1);

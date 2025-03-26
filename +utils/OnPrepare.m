@@ -8,16 +8,24 @@ function OnPrepare(app)
     
     for i_run = 1:size(app.UITable_2.Data,1)
         index = app.UITable_2.Data(i_run,1);
-        % read data
-        data_dir = fullfile(fileparts(init_dir),'All_Data');
+
+        % determine output data path
+        isCustomOutputPath = app.CustomizeoutputpathCheckBox.Value;
+        if ~isCustomOutputPath
+            data_dir = fullfile(app.DatapathEditField.Value,'All_Data');
+        else
+            data_dir = app.OutputpathEditField.Value;
+        end
         if ~exist(data_dir)
             mkdir(data_dir)
         end 
+
+        % load data from data path
         fname_here = fullfile(fileList(index).folder, fileList(index).name);
         utils.LogMessage(app, fname_here);
         utils.LogMessage(app, 'Loading 4D-STEM Data ......');
 
-        % processing different filetypes
+        % processing different filetypes: loading and determining real-space crop size
         [~, ~, ext] = fileparts(fname_here);
         switch ext
             case '.dm4'
@@ -41,10 +49,11 @@ function OnPrepare(app)
             case '.h5'
                 utils.LogMessage(app, 'Loading from .h5 ......');
                 if app.CroprealspaceCheckBox.Value
-                    crop_idx0 = app.UITable_2.Data(i_run, end-3:end);
-                    idx_y = crop_idx0(1):crop_idx0(2);
-                    idx_x = crop_idx0(3):crop_idx0(4);
+                    idx_all = app.UITable_2.Data(i_run, end-3:end);
+                    idx_y = idx_all(1):idx_all(2);
+                    idx_x = idx_all(3):idx_all(4);
                     dp = read_h5_arina(fname_here,idx_x,idx_y);
+                    crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
                 else
                     dp = read_h5_arina(fname_here);
                     crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
@@ -54,7 +63,6 @@ function OnPrepare(app)
                 utils.LogMessage(app, 'filetype not supported');
         end
         utils.LogMessage(app, 'Finished loading 4D-STEM Data');
-        
         app.UITable_3.Data = [app.UITable_3.Data; index crop_idx0 rot];
         utils.LogMessage(app, sprintf('Cropping data into [%d:%d] vs [%d:%d]', crop_idx0));
 
@@ -62,10 +70,11 @@ function OnPrepare(app)
         Np_binto = app.Np_bintoSpinner.Value;
         tot_rotation = app.RotoffsetEditField.Value + 180 + rot;
         binsize = round(size(dp,1)/Np_binto);
-
         utils.LogMessage(app, sprintf('Binning CBED by size %i', binsize));
         cbed = bin_cbed(dp, binsize);
         utils.LogMessage(app, 'Finished CBED binning');
+        
+        % how to rotate?
         switch app.RotateSwitch.Value
             case 'Rot. CBED'
                 cbed = imrotate(cbed,tot_rotation,'bilinear');
@@ -79,7 +88,6 @@ function OnPrepare(app)
         
         % how much to pad?
         Np_padto = app.Np_padtoSpinner.Value+mod(size(cbed,1),2); 
-        % Np_padto = size(cbed,1);
     
         % generate mask
         [~, maskname] = mygen_mask(app.PtychopathEditField.Value, Np_padto, Np_binto, tot_rotation, 'crop');

@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1979294813" file="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\ptycho_GUI.prj" location="G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="打包为 App">
+  <configuration build-checksum="3947920491" file="/data400T/usr/zehao4090/Ptycho_GUI/ptycho_GUI.prj" location="/data400T/usr/zehao4090/Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="Package App">
     <param.appname>ptycho_GUI</param.appname>
     <param.authnamewatermark>Zehao Dong</param.authnamewatermark>
     <param.email>dzh22@mails.tsinghua.edu.cn</param.email>
@@ -8,13 +8,15 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\dongz\AppData\Local\Temp\tpf614553b_1ccf_4943_8e98_82d1e74fd804.png</param.screenshot>
+    <param.screenshot>/tmp/tp1d2dbcd5_39d7_4cec_820b_36137e7cff5d.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
-    <param.platforms />
-    <param.output>${PROJECT_ROOT}\dist</param.output>
+    <param.platforms>
+      <item>glnxa64</item>
+    </param.platforms>
+    <param.output>${PROJECT_ROOT}/dist</param.output>
     <param.guid>8e60a9d4-6689-4ca5-a03c-5b73389ff8e5</param.guid>
     <unset>
       <param.icon />
@@ -25,186 +27,185 @@
       <param.products.name />
       <param.products.id />
       <param.products.version />
-      <param.platforms />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\ptycho_GUI.mlapp</file>
+      <file>${PROJECT_ROOT}/ptycho_GUI.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+beamline\find_specDatFile.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+beamline\identify_eaccount.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+CBF\cbfread.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\add_content.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\add_groups.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\get_datatype.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\hdf5_cp_file.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\hdf5_dset_exists.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\hdf5_load.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\hdf5read_main.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\private\rm_delimiter.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\save2hdf5.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\write_attribute.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\+HDF\write_dataset.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\datread.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\edfread.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\fliread.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\image_default_orientation.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\image_orient.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\image_read.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\image_read_help.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\load_prepared_data.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\load_ptycho_recons.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\marread.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\movefile_fast.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\private\image_orient_help.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\private\image_read_sub_help.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\sendSMS.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\spec_help.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\spec_read.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+io\speread.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\center.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\double2int.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\fft2_partial.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\fft_partial.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\fftshift_2D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\get_img_grad.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\get_phase_gradient_2D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\ifft2_partial.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\ifft_partial.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\ifftshift_2D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\isint.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\mean2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\norm2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+math\sp_quantile.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+plotting\c2image.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+plotting\franzmap.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+plotting\imagesc3D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+plotting\smart_figure.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+plotting\suptitle.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\abspath.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\apply_3D_apodization.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\binning_2D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\binning_3D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\char_to_cellstr.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\check_available_memory.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\check_matlab_version.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\compile_aps_dirname.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\crop_pad.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\default_parameter_value.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\dftregistration.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\filt2d.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\filt2d_pad.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\find_files.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\findresidues.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\fopen_until_exists.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\fourier_shell_corr_3D_2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\fourier_shell_corr_3D_2e.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\fract_hanning.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\fract_hanning_pad.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\get_grid.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\get_hdr_val.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\get_option.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\get_unit_length.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\identify_system.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\imgaussfilt2_fft.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\imshift_fft_ax.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\interpolateFT.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\onCleanup.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\param_protect_field.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\progressbar.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\prop_free_ff.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\prop_free_nf.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\radtap.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\registersubimages_2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\relative_path.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\remove_linearphase_v2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\rmphaseramp.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\shiftpp2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\smooth_edges.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\stabilize_phase.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\struc2cell.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\update_param.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\+utils\verbose.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\calc_FSC.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_error_metric.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_object_spectrum.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_objects.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_positions.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_probes.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_probes_at_detector.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_raw_data.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\plot_results.m</file>
-      <file>${PROJECT_ROOT}\+core\+analysis\private\get_object_pixel_size.m</file>
-      <file>${PROJECT_ROOT}\+core\+save\extract4saving.m</file>
-      <file>${PROJECT_ROOT}\+core\+save\reconstructions_as_h5.m</file>
-      <file>${PROJECT_ROOT}\+core\+save\reconstructions_as_mat.m</file>
-      <file>${PROJECT_ROOT}\+core\+save\save_results.m</file>
-      <file>${PROJECT_ROOT}\+core\append_engine.m</file>
-      <file>${PROJECT_ROOT}\+core\apply_binning.m</file>
-      <file>${PROJECT_ROOT}\+core\check_prepared_data.m</file>
-      <file>${PROJECT_ROOT}\+core\engine_status.m</file>
-      <file>${PROJECT_ROOT}\+core\export4remote.m</file>
-      <file>${PROJECT_ROOT}\+core\find_shared_IDs.m</file>
-      <file>${PROJECT_ROOT}\+core\generate_scan_name.m</file>
-      <file>${PROJECT_ROOT}\+core\hermite_like.m</file>
-      <file>${PROJECT_ROOT}\+core\initial_checks.m</file>
-      <file>${PROJECT_ROOT}\+core\initialize_ptycho.m</file>
-      <file>${PROJECT_ROOT}\+core\prep_h5data.m</file>
-      <file>${PROJECT_ROOT}\+core\prepare_initial_guess.m</file>
-      <file>${PROJECT_ROOT}\+core\prepare_initial_object.m</file>
-      <file>${PROJECT_ROOT}\+core\prepare_initial_probes.m</file>
-      <file>${PROJECT_ROOT}\+core\private\ptycho_exit.m</file>
-      <file>${PROJECT_ROOT}\+core\private\write_procID.m</file>
-      <file>${PROJECT_ROOT}\+core\probe_modes_ortho.m</file>
-      <file>${PROJECT_ROOT}\+core\ptycho_adjust_positions.m</file>
-      <file>${PROJECT_ROOT}\+core\ptycho_model_probe.m</file>
-      <file>${PROJECT_ROOT}\+core\ptycho_prepare_paths.m</file>
-      <file>${PROJECT_ROOT}\+core\ptycho_prepare_scans.m</file>
-      <file>${PROJECT_ROOT}\+core\ptycho_recons.m</file>
-      <file>${PROJECT_ROOT}\+core\remote_cleanup.m</file>
-      <file>${PROJECT_ROOT}\+core\remote_status.m</file>
-      <file>${PROJECT_ROOT}\+core\run_data_preparator.m</file>
-      <file>${PROJECT_ROOT}\+core\run_engine.m</file>
-      <file>${PROJECT_ROOT}\+core\update_object_size.m</file>
-      <file>${PROJECT_ROOT}\+detector\+prep_data\update_defaults.m</file>
-      <file>${PROJECT_ROOT}\+detector\+prep_data\update_funcs.m</file>
-      <file>${PROJECT_ROOT}\+detector\detStorage.m</file>
-      <file>${PROJECT_ROOT}\+detector\initialize_detector.m</file>
-      <file>${PROJECT_ROOT}\+detector\load_detector.m</file>
-      <file>${PROJECT_ROOT}\+scans\get_queue.m</file>
-      <file>${PROJECT_ROOT}\+scans\read_metadata.m</file>
-      <file>${PROJECT_ROOT}\+scans\read_positions.m</file>
-      <file>${PROJECT_ROOT}\+utils\imshow.m</file>
-      <file>${PROJECT_ROOT}\+utils\LogMessage.m</file>
-      <file>${PROJECT_ROOT}\+utils\OnPrepare.m</file>
-      <file>${PROJECT_ROOT}\+utils\OnReconstruct.m</file>
-      <file>${PROJECT_ROOT}\+utils\rawread.m</file>
-      <file>${PROJECT_ROOT}\+utils\ReadDM4File_4D.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\aligned_FSC.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\check_option.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\compose_affine_matrix.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\FP_FSC_preprocess.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\generateResultDir.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils\is_used.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\bin_cbed.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\centroid3.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\shift_pix.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Other\PAD_4D2img\shiftmeasure.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\Radius_subpix\crop_pad.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\read_h5_arina.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_dong\utils_electron\electronwavelength.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_zhen\gen_mask.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\utils_zhen\generateProbeFunction2.m</file>
-      <file>G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\tomo\utils\gausswin.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/calc_FSC.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_error_metric.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_object_spectrum.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_objects.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_positions.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_probes.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_probes_at_detector.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_raw_data.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/plot_results.m</file>
+      <file>${PROJECT_ROOT}/+core/+analysis/private/get_object_pixel_size.m</file>
+      <file>${PROJECT_ROOT}/+core/+save/extract4saving.m</file>
+      <file>${PROJECT_ROOT}/+core/+save/reconstructions_as_h5.m</file>
+      <file>${PROJECT_ROOT}/+core/+save/reconstructions_as_mat.m</file>
+      <file>${PROJECT_ROOT}/+core/+save/save_results.m</file>
+      <file>${PROJECT_ROOT}/+core/append_engine.m</file>
+      <file>${PROJECT_ROOT}/+core/apply_binning.m</file>
+      <file>${PROJECT_ROOT}/+core/check_prepared_data.m</file>
+      <file>${PROJECT_ROOT}/+core/engine_status.m</file>
+      <file>${PROJECT_ROOT}/+core/export4remote.m</file>
+      <file>${PROJECT_ROOT}/+core/find_shared_IDs.m</file>
+      <file>${PROJECT_ROOT}/+core/generate_scan_name.m</file>
+      <file>${PROJECT_ROOT}/+core/hermite_like.m</file>
+      <file>${PROJECT_ROOT}/+core/initial_checks.m</file>
+      <file>${PROJECT_ROOT}/+core/initialize_ptycho.m</file>
+      <file>${PROJECT_ROOT}/+core/prep_h5data.m</file>
+      <file>${PROJECT_ROOT}/+core/prepare_initial_guess.m</file>
+      <file>${PROJECT_ROOT}/+core/prepare_initial_object.m</file>
+      <file>${PROJECT_ROOT}/+core/prepare_initial_probes.m</file>
+      <file>${PROJECT_ROOT}/+core/private/ptycho_exit.m</file>
+      <file>${PROJECT_ROOT}/+core/private/write_procID.m</file>
+      <file>${PROJECT_ROOT}/+core/probe_modes_ortho.m</file>
+      <file>${PROJECT_ROOT}/+core/ptycho_adjust_positions.m</file>
+      <file>${PROJECT_ROOT}/+core/ptycho_model_probe.m</file>
+      <file>${PROJECT_ROOT}/+core/ptycho_prepare_paths.m</file>
+      <file>${PROJECT_ROOT}/+core/ptycho_prepare_scans.m</file>
+      <file>${PROJECT_ROOT}/+core/ptycho_recons.m</file>
+      <file>${PROJECT_ROOT}/+core/remote_cleanup.m</file>
+      <file>${PROJECT_ROOT}/+core/remote_status.m</file>
+      <file>${PROJECT_ROOT}/+core/run_data_preparator.m</file>
+      <file>${PROJECT_ROOT}/+core/run_engine.m</file>
+      <file>${PROJECT_ROOT}/+core/update_object_size.m</file>
+      <file>${PROJECT_ROOT}/+detector/+prep_data/update_defaults.m</file>
+      <file>${PROJECT_ROOT}/+detector/+prep_data/update_funcs.m</file>
+      <file>${PROJECT_ROOT}/+detector/detStorage.m</file>
+      <file>${PROJECT_ROOT}/+detector/initialize_detector.m</file>
+      <file>${PROJECT_ROOT}/+detector/load_detector.m</file>
+      <file>${PROJECT_ROOT}/+scans/get_queue.m</file>
+      <file>${PROJECT_ROOT}/+scans/read_metadata.m</file>
+      <file>${PROJECT_ROOT}/+scans/read_positions.m</file>
+      <file>${PROJECT_ROOT}/+utils/LogMessage.m</file>
+      <file>${PROJECT_ROOT}/+utils/OnPrepare.m</file>
+      <file>${PROJECT_ROOT}/+utils/OnReconstruct.m</file>
+      <file>${PROJECT_ROOT}/+utils/ReadDM4File_4D.m</file>
+      <file>${PROJECT_ROOT}/+utils/imshow.m</file>
+      <file>${PROJECT_ROOT}/+utils/rawread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+beamline/find_specDatFile.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+beamline/identify_eaccount.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+CBF/cbf_uncompress.mexa64</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+CBF/cbfread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/add_content.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/add_groups.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/get_datatype.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/hdf5_cp_file.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/hdf5_dset_exists.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/hdf5_load.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/hdf5read_main.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/private/rm_delimiter.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/save2hdf5.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/write_attribute.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/+HDF/write_dataset.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/datread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/edfread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/fliread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/image_default_orientation.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/image_orient.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/image_read.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/image_read_help.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/load_prepared_data.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/load_ptycho_recons.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/marread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/movefile_fast.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/private/image_orient_help.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/private/image_read_sub_help.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/sendSMS.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/spec_help.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/spec_read.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+io/speread.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/center.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/double2int.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/fft2_partial.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/fft_partial.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/fftshift_2D.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/get_img_grad.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/get_phase_gradient_2D.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/ifft2_partial.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/ifft_partial.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/ifftshift_2D.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/isint.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/mean2.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/norm2.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+math/sp_quantile.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+plotting/c2image.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+plotting/franzmap.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+plotting/imagesc3D.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+plotting/smart_figure.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+plotting/suptitle.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/abspath.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/apply_3D_apodization.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/binning_2D.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/binning_3D.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/char_to_cellstr.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/check_available_memory.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/check_matlab_version.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/compile_aps_dirname.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/crop_pad.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/default_parameter_value.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/dftregistration.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/filt2d.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/filt2d_pad.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/find_files.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/findresidues.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/fopen_until_exists.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/fourier_shell_corr_3D_2.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/fourier_shell_corr_3D_2e.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/fract_hanning.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/fract_hanning_pad.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/get_grid.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/get_hdr_val.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/get_option.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/get_unit_length.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/identify_system.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/imgaussfilt2_fft.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/imshift_fft_ax.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/interpolateFT.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/onCleanup.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/param_protect_field.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/progressbar.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/prop_free_ff.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/prop_free_nf.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/radtap.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/registersubimages_2.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/relative_path.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/remove_linearphase_v2.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/rmphaseramp.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/shiftpp2.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/smooth_edges.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/stabilize_phase.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/struc2cell.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/update_param.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/+utils/verbose.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/PAD_4D2img/centroid3.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/PAD_4D2img/crop_pad.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/PAD_4D2img/shift_pix.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/PAD_4D2img/shiftmeasure.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/multislice_analysis/compose_affine_matrix.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils/FP_FSC_preprocess.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils/aligned_FSC.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils/check_option.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils/generateResultDir.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils/is_used.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils_dong/bin_cbed.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils_dong/read_h5_arina.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils_electron/electronwavelength.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils_zhen/gen_mask.m</file>
+      <file>/data400T/usr/zehao4090/fold_slice2103_202211_copy/ptycho/utils_zhen/generateProbeFunction2.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="dist" optional="false">G:\Seafile\Research\STEM\Ptychography\shift2\fold_slice2103_202211_copy\ptycho\Ptycho_GUI\dist</file>
+      <file location="${PROJECT_ROOT}" name="dist" optional="false">/data400T/usr/zehao4090/Ptycho_GUI/dist</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023a</root>
+      <root>/usr/local/MATLAB/R2023b</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="embeddedcoder" />
@@ -245,18 +246,18 @@
       </toolbox>
     </matlab>
     <platform>
-      <unix>false</unix>
+      <unix>true</unix>
       <mac>false</mac>
-      <windows>true</windows>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
-      <linux>false</linux>
+      <linux>true</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
+      <osver>4.18.0-513.9.1.el8_9.x86_64</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>win64</arch>
+      <arch>glnxa64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>

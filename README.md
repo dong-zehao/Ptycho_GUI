@@ -46,6 +46,7 @@ Ptycho_GUI is a MATLAB-based graphical user interface designed for performing pt
 1. **Path initialization**: Select appropriate paths and click "Test."
    - **Ptycho path**: path to `ptycho_GUI`
    - **Data path**: Choose the dataset folder containing 4D-STEM data (multiple datasets can be found).
+   - **Optional: Output path**: Customize the output path for ptycho results. Default path will be `\Data_path\All_Data`.
 2. **Prepare data**: 
    - Select your camera (detector) parameters (saved in `Ptycho_GUI\+configs\xxxx.mat`), including voltage, alpha, rbf, stepsize, rotation, ADU, which you can check and change in the `Show Hyper Param.` tab.
      - MORE PARAMETERS CAN BE LOADED WITH CUSTOMLY SAVED `.mat` FILES IN `+configs`.
