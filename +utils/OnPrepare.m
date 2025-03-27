@@ -35,7 +35,7 @@ function OnPrepare(app)
                 if app.CroprealspaceCheckBox.Value
                     crop_idx0 = app.UITable_2.Data(i_run, end-3:end);
                 else
-                    crop_idx0 = [1 size(dp,3) 1 size(dp,4)];
+                    crop_idx0 = [2 size(dp,3) 2 size(dp,4)];
                 end
             case '.raw'
                 utils.LogMessage(app, 'Loading from .raw ......');
@@ -198,7 +198,7 @@ function [mask, maskname] = mygen_mask(path, in, out, rot, methods)
         methods = 'loose';
     end
     mask = imrotate(gen_mask(in, out), rot, "nearest", methods);
-    maskname = fullfile(path, ['det_mask' num2str(in) '_outside' num2str(out) '_rot' num2str(rot) '.mat']);
+    maskname = fullfile(path, 'masks' , ['det_mask' num2str(in) '_outside' num2str(out) '_rot' num2str(rot) '.mat']);
     save(maskname, 'mask');
 end
 
