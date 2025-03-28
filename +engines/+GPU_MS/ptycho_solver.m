@@ -500,6 +500,9 @@ for iter =  (1-par.initial_probe_rescaling):par.number_iterations
 %     end
   
     if mod(iter, par.plot_results_every)==0 || iter == 1
+        par.p.apphandle.object_temp = self.object;
+        par.p.apphandle.cache_temp.init_rot = cache.init_rot;
+        par.p.apphandle.cache_temp.object_ROI = cache.object_ROI;
         utils.plot_object(par.p.apphandle, self.object, cache)
         utils.plot_probe(par.p.apphandle, self.probe)
         utils.plot_error(par.p.apphandle, fourier_error)

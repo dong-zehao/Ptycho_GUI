@@ -161,8 +161,8 @@ function OnPrepare(app)
         roi_label = strcat('0_Ndp',num2str(Np_p(1)));
         
         if app.SavedpCheckBox.Value
+            utils.LogMessage(app, 'Finished dp.hdf5 saving');
             saveName = strcat('data_roi',roi_label,'_dp.hdf5');
-            utils.LogMessage(app, sprintf('Saving %s ......', saveName));
             h5create(fullfile(save_dir,saveName), '/dp', size(cbed),'ChunkSize',[size(cbed,1), size(cbed,2), 1],'Deflate',4,'Datatype','single')
             h5write(fullfile(save_dir,saveName), '/dp', cbed)
         else
