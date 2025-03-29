@@ -309,6 +309,12 @@ for iter =  (1-par.initial_probe_rescaling):par.number_iterations
             error('Not implemented method')
     end
     
+    % check stop
+    if par.p.apphandle.StopRequested
+        utils.LogMessage(app, 'Stopping received ...');
+        drawnow;
+        return;
+    end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     if iter == 0; continue; end  % interation 0 is used only to calibrate iinitial probe intensity

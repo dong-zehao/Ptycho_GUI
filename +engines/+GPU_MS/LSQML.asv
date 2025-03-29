@@ -78,10 +78,10 @@ function [self, cache, fourier_error] =  LSQML(self,par,cache,fourier_error,iter
    for  jj = ind_range
 
         % check stop
-        if par.p.apphandle.StopRequested
+        if app.StopRequested
             utils.LogMessage(app, 'Stopping...');
             drawnow;
-            return;
+            break;
         end
 
        % list of positions solved in current subiteration 

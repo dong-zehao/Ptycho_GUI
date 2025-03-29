@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1441055566" file="/data400T/usr/zehao4090/Ptycho_GUI/ptycho_GUI.prj" location="/data400T/usr/zehao4090/Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3507460653" file="/data400T/usr/zehao4090/Ptycho_GUI/ptycho_GUI.prj" location="/data400T/usr/zehao4090/Ptycho_GUI" name="ptycho_GUI" target="target.mlapps" target-name="Package App">
     <param.appname>ptycho_GUI</param.appname>
     <param.authnamewatermark>Zehao Dong</param.authnamewatermark>
     <param.email>dzh22@mails.tsinghua.edu.cn</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>/tmp/tp4f97b878_1871_4d9c_90ef_a30e871300f3.png</param.screenshot>
+    <param.screenshot>/tmp/tp4ccedde3_e629_43d1_86cf_b44d26b86231.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />

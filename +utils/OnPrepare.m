@@ -7,6 +7,14 @@ function OnPrepare(app)
     fileList = dir(fullfile(init_dir, filename));
     
     for i_run = 1:size(app.UITable_2.Data,1)
+
+        % check stop before loading
+        if app.StopRequested
+            utils.LogMessage(app, 'Stopping...');
+            drawnow;
+            break;
+        end
+
         index = app.UITable_2.Data(i_run,1);
 
         % determine output data path
@@ -64,6 +72,13 @@ function OnPrepare(app)
         end
         app.UITable_3.Data = [app.UITable_3.Data; index crop_idx0 rot];
         utils.LogMessage(app, sprintf('Cropping data into [%d:%d] vs [%d:%d]', crop_idx0));
+
+        % check stop after loading
+        if app.StopRequested
+            utils.LogMessage(app, 'Stopping...');
+            drawnow;
+            break;
+        end
 
         % how much to bin?
         Np_binto = app.Np_bintoSpinner.Value;
@@ -160,6 +175,13 @@ function OnPrepare(app)
         utils.imshow(app.UIAxes, sum(cbed,3));
         roi_label = strcat('0_Ndp',num2str(Np_p(1)));
         
+        % check stop before saving
+        if app.StopRequested
+            utils.LogMessage(app, 'Stopping...');
+            drawnow;
+            break;
+        end
+
         if app.SavedpCheckBox.Value
             saveName = strcat('data_roi',roi_label,'_dp.hdf5');
             utils.LogMessage(app, sprintf('Saving %s ......', saveName));

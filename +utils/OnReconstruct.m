@@ -9,6 +9,14 @@ function OnReconstruct(app)
     base_path=strcat(base_path,'/');
     testmode = false;       
     for i_run = 1:size(app.UITable.Data,1)
+
+        % check stop before running
+        if app.StopRequested
+            utils.LogMessage(app, 'Stopping...');
+            drawnow;
+            break;
+        end
+
         index = app.UITable.Data(i_run,1);
         utils.LogMessage(app, sprintf('Running reconstruction for scan number %02d ......', index));
         scan_string_format = '%02d';
