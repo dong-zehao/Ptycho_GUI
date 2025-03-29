@@ -221,7 +221,11 @@ function [mask, maskname] = mygen_mask(path, in, out, rot, methods)
         methods = 'loose';
     end
     mask = imrotate(gen_mask(in, out), rot, "nearest", methods);
-    maskname = fullfile(path, 'masks' , ['det_mask' num2str(in) '_outside' num2str(out) '_rot' num2str(rot) '.mat']);
+    mask_path = fullfile(path, 'masks');
+    if ~exist(mask_path)
+        mkdir(mask_path);
+    end
+    maskname = fullfile(mask_path , ['det_mask' num2str(in) '_outside' num2str(out) '_rot' num2str(rot) '.mat']);
     save(maskname, 'mask');
 end
 
